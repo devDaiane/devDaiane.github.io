@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;300&family=Poppins:wght@200;300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins;
+}
+
+body {
+    padding: 0;
+    background-color: #000000;
+    }
+
+header .interface{
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    color: #5D737E;
+}
+
+header span {
+    color: #87BBA2;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .menu {
+    display: flex;
+    padding: 10px;
+    color: #F0F7EE;
+    font-size: 1rem;
+    gap: 10px;
+}
+
+header a {
+    color: #F0F7EE;
+}
+
+header a:hover {
+    color: #FFF07C;
+}
+
+.contato button{
+    color: black;
+    background-color: #FFF07C;
+font-size: 15px;
+font-weight: 800;
+padding: 10px 20px;
+border: 0;
+border-radius: 30px;
+cursor: pointer;
+}
+
+button:hover{
+    color: #5D737E;
+    transform: scale(1.10);
+}
+
+.sobremim {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+    background-color: #000000;
+    }
+
+.contprincipal {
+    color: #87BBA2;
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 20px;
+}
+
+.contprincipal p {
+    color: #F0F7EE;
+}
+
+.contprincipal button {
+    background-color: #FFF07C;
+    border: 0;
+    border-radius: 30px;
+    justify-self: flex-start;
+    padding: 15px 40px;
+    color: black;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contprincipal button:hover{
+    color: #5D737E;
+    transform: scale(1.10);
+}
+
+a .social button{
+    background-color: #F0F7EE;
+}
+
+.sobremim img {
+    max-width: 100%;
+    margin-left: 100px;
+}
+
+.tecs h2 {
+    font-size: 40px;
+    color: #87BBA2;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cards {
+    margin-top: 50px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 4%;
+    gap: 10px;
+    border-radius: 20px;
+    margin-left: 120px;
+    transition: .2s;
+        }
+
+.cards:hover{
+    color: #5D737E;
+    transform: scale(1.10); 
+    box-shadow: 0 0 8px;
+}
+
+.título h2{
+    font-size: 40px;
+    color: #87BBA2;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.portfólio{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+      }
+
+
+.projetos img{
+    margin-top: 50px;
+    width: 360px;
+    height: 460px;
+    
+}
+   
+.projetos button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFF07C;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+transition: .2s;
+    }
+
+.formulario{
+        padding: 80px 4%;
+    }
+
+.formulario h2{
+    font-size: 40px;
+    color: #87BBA2;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.dados{
+    max-width: 500px;
+    margin:auto;
+     
+}
+form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 10px;
+margin-top: 50px;
+}
+
+input, textarea{
+    width: 100%;
+    border: 0;
+    background-color:#5d737e12;
+    padding: 20px 15px;
+    border-radius: 17px;
+    color: white;
+    font-size: 16px;
+}
+
+textarea{
+    resize: none;
+}
+
+.enviar{
+    margin-top: 15px;
+    text-align:center;
+    }
+
+.enviar input{
+    width: 110px;
+    background-color: #FFF07C;
+    color: #000000;
+       cursor: pointer;
+    font-size: 15px;
+}
+
+.enviar input:hover{
+    color: #5D737E;
+    transform: scale(1.10);
+}
+
+footer{
+    padding: 40px;
+    box-shadow: 0 0 20px  10px #5d737e25;
+}
+
+footer p{
+    color:white;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+   }
+
+
+footer span{
+    color: #FFF07C;
+}
+
+.rodape button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFF07C;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+transition: .2s;
+}
+
+@media screen and (max-width:1020px){
+    .menu, .contato{
+        display: none;
+    }
+    .sobremim, .tecs, .cards, .portfólio, .formulario, .rodape{
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        }
+}
